@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Hero Demo</title>
+  <style>
+    body {
+      background: #f8f9fb;
+      padding: 40px;
+      font-family: "Noto Sans", Arial, sans-serif;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Weather Hero Demo</h1>
+  <!-- The widget will inject the card into this container when loaded outside Staffbase -->
+  <div id="widget"></div>
+  <script src="pabon510.weather-hero-dynamic.js"></script>
+  <script>
+    // For demo purposes, set a WeatherAPI key here or assign via browser console.
+    // Without a key, the widget will show an error message.
+    window.weatherApiKey = '';
+    // Provide a default location for the demo; this will be used in fallback mode.
+    window.userProfileLocation = 'New York';
+  </script>
+</body>
+</html>
